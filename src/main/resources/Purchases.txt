@@ -1,0 +1,8 @@
+23|973239|Wallmart 
+99|234958|DStore 
+25|973239|Oasis 
+66|973239|Wallmart 
+33|124847|Pearson 
+83|973239|Trad| 
+72|124847|Wallmart 
+54|038403|Suz

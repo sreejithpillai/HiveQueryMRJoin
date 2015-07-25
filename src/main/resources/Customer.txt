@@ -1,0 +1,3 @@
+867230|William|smith|New York 
+973239|Alex|bard|Canada 
+124847|Michael|george|Washington 
