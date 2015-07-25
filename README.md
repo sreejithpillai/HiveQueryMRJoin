@@ -21,7 +21,7 @@ Reducer <br>
 2.Combines the record for both depending upon tag attribute.<br>
 
 <h5>Problem statement : </h5> Find total amount purchased along with number of transaction for each customer. <br>
-
+<br>
 Customer table will have unique customer ID along with other details of Customer.
 <br>
 ****************Customer table****************
@@ -93,8 +93,8 @@ on p.purchase_id=t.purchase_id
 group by c.cust_id,c.cust_fname; 
 
 <h5>Output </h5>
-alex|169379|4 
-michale|463558|2 
+alex|169379|4 <br>
+michael|463558|2 
 
 ```
 hadoop jar HiveMRJoin.jar /sreejith/hive-loc/customer/data/Customer /sreejith/hive-loc/purchases/data/Purchases /sreejith/hive-loc/transaction/data/Transaction /sreejith/prac/output1 /sreejith/prac/output2 /sreejith/prac/FinalOutput
