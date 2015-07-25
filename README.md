@@ -10,19 +10,19 @@ Apache licensed.
 Joins are possibly one of the most complex operations one can execute in MapReduce. 
 By design, MapReduce is very good at processing large data sets by looking at every record or group in isolation, so joining two very large data sets together does not fit into the paradigm gracefully. 
 
-What Reduce side join performs : 
-Map 
-1.Mapper starts the join operation by reading different input files and outputs all records to Reducer. 
-2.Tag each records for identifying from which source the record has arrived. 
-3.Key of the map output has to be the join key 
-
-Reducer 
-1.Reducer will get shuffled data from all files with common key. 
-2.Combines the record for both depending upon tag attribute.
+What Reduce side join performs : <br>
+Map <br>
+1.Mapper starts the join operation by reading different input files and outputs all records to Reducer. <br>
+2.Tag each records for identifying from which source the record has arrived. <br>
+3.Key of the map output has to be the join key <br>
+<br>
+Reducer <br> 
+1.Reducer will get shuffled data from all files with common key. <br>
+2.Combines the record for both depending upon tag attribute.<br>
 
 <h5>Problem statement : </h5> Find total amount purchased along with number of transaction for each customer.
 
-Customer table will have unique customer ID along with other details of Customer. 
+Customer table will have unique customer ID along with other details of Customer. <br>
 <br>
 ****************Customer table****************
 <br>
