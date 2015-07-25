@@ -20,11 +20,12 @@ Reducer
 1.Reducer will get shuffled data from all files with common key. 
 2.Combines the record for both depending upon tag attribute.
 
-<h4>Problem statement : Find total amount purchased along with number of transaction for each customer. </h4>
+<h5>Problem statement </h5>: Find total amount purchased along with number of transaction for each customer.
 
 Customer table will have unique customer ID along with other details of Customer. 
 <br>
-***********Customer table*********** 
+****************Customer table****************
+<br>
 cust_id|cust_fname|cust_lname|location 
 867230|William|smith|New York 
 973239|Alex|bard|Canada 
@@ -32,7 +33,8 @@ cust_id|cust_fname|cust_lname|location
 
 Purchases will have unique purchase Id for each purchase. There will be multiple purchases for each customer. 
 <br>
-***********Purchases table*********** 
+****************Purchases table****************
+<br>
 purchase_id|cid|store 
 23|973239|Wallmart 
 99|234958|DStore 
@@ -45,7 +47,8 @@ purchase_id|cid|store
 
 Transaction table will have unique transaction Id for each transaction along with purchase amount for each transaction 
 <br>
-***********Transaction table*********** 
+****************Transaction table****************
+<br>
 purchase_id|transa_date|purchase_amt 
 23|2015-01-23|23434 
 99|2015-01-12|89734 
@@ -56,10 +59,10 @@ purchase_id|transa_date|purchase_amt
 72|2015-01-04|453822 
 54|2014-02-13|3290843 
 
-Solution: 
+<h5>Solution: </h5> 
 We will first do a simple Cross join on Customer and Purchases table using customer id from both tables and prepare a file where we have data of both in a single file. 
 
-The HIVE query is : 
+<h5>The HIVE query is : </h5>
 select c.cust_fname ,sum(t.purchase_amt) ,count(*) from customer c 
 inner join purchases p 
 on c.cust_id=p.cid 
@@ -67,7 +70,7 @@ inner join transaction t
 on p.purchase_id=t.purchase_id 
 group by c.cust_id,c.cust_fname; 
 
-The output of the above Hive query is 
+<h5>Output </h5>
 alex|169379|4 
 michale|463558|2 
 
