@@ -34,7 +34,7 @@ cust_id|cust_fname|cust_lname|location
 <br>
 124847|Michael|george|Washington 
 <br>
-
+<br>
 Purchases will have unique purchase Id for each purchase. There will be multiple purchases for each customer. 
 <br>
 ****************Purchases table****************
@@ -56,6 +56,7 @@ purchase_id|cid|store
 72|124847|Wallmart 
 <br>
 54|038403|Suz 
+<br>
 <br>
 Transaction table will have unique transaction Id for each transaction along with purchase amount for each transaction 
 <br>
