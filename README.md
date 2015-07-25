@@ -20,45 +20,66 @@ Reducer
 1.Reducer will get shuffled data from all files with common key. 
 2.Combines the record for both depending upon tag attribute.
 
-<h5>Problem statement </h5>: Find total amount purchased along with number of transaction for each customer.
+<h5>Problem statement : </h5> Find total amount purchased along with number of transaction for each customer.
 
 Customer table will have unique customer ID along with other details of Customer. 
 <br>
 ****************Customer table****************
 <br>
 cust_id|cust_fname|cust_lname|location 
+<br>
 867230|William|smith|New York 
+<br>
 973239|Alex|bard|Canada 
+<br>
 124847|Michael|george|Washington 
+<br>
 
 Purchases will have unique purchase Id for each purchase. There will be multiple purchases for each customer. 
 <br>
 ****************Purchases table****************
 <br>
-purchase_id|cid|store 
-23|973239|Wallmart 
+purchase_id|cid|store
+<br>
+23|973239|Wallmart
+<br>
 99|234958|DStore 
+<br>
 25|973239|Oasis 
+<br>
 66|973239|Wallmart 
+<br>
 33|124847|Pearson 
+<br>
 83|973239|Trad| 
+<br>
 72|124847|Wallmart 
+<br>
 54|038403|Suz 
-
+<br>
 Transaction table will have unique transaction Id for each transaction along with purchase amount for each transaction 
 <br>
 ****************Transaction table****************
 <br>
 purchase_id|transa_date|purchase_amt 
+<br>
 23|2015-01-23|23434 
+<br>
 99|2015-01-12|89734 
+<br>
 25|2014-03-28|36495 
+<br>
 66|2015-05-20|76577 
+<br>
 33|2015-03-17|9736 
+<br>
 83|2015-01-10|32873 
+<br>
 72|2015-01-04|453822 
+<br>
 54|2014-02-13|3290843 
-
+<br>
+<br>
 <h5>Solution: </h5> 
 We will first do a simple Cross join on Customer and Purchases table using customer id from both tables and prepare a file where we have data of both in a single file. 
 
