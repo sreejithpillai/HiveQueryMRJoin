@@ -35,8 +35,7 @@ cust_id|cust_fname|cust_lname|location
 124847|Michael|george|Washington 
 <br>
 <br>
-Purchases will have unique purchase Id for each purchase. There will be multiple purchases for each customer.<br> 
-<br>
+Purchases will have unique purchase Id for each purchase. There will be multiple purchases for each customer.<br>
 ****************Purchases table****************
 <br>
 purchase_id|cid|store
