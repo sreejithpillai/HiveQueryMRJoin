@@ -20,9 +20,10 @@ Reducer
 1.Reducer will get shuffled data from all files with common key. 
 2.Combines the record for both depending upon tag attribute.
 
-Problem statement : Find total amount purchased along with number of transaction for each customer. 
+<h4>Problem statement : Find total amount purchased along with number of transaction for each customer. </h4>
 
 Customer table will have unique customer ID along with other details of Customer. 
+<br>
 ***********Customer table*********** 
 cust_id|cust_fname|cust_lname|location 
 867230|William|smith|New York 
@@ -30,6 +31,7 @@ cust_id|cust_fname|cust_lname|location
 124847|Michael|george|Washington 
 
 Purchases will have unique purchase Id for each purchase. There will be multiple purchases for each customer. 
+<br>
 ***********Purchases table*********** 
 purchase_id|cid|store 
 23|973239|Wallmart 
@@ -42,6 +44,7 @@ purchase_id|cid|store
 54|038403|Suz 
 
 Transaction table will have unique transaction Id for each transaction along with purchase amount for each transaction 
+<br>
 ***********Transaction table*********** 
 purchase_id|transa_date|purchase_amt 
 23|2015-01-23|23434 
